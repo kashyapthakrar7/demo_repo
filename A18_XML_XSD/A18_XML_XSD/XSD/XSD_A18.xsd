@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="A18CkycResendOTPResponse" nillable="true" type="A18CkycResendOTPResponse" />
+  <xs:complexType name="A18CkycResendOTPResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="1" name="RequestId" type="xs:string" />
+      <xs:element minOccurs="0" maxOccurs="1" name="ReferenceGuid" type="xs:string" />
+      <xs:element minOccurs="0" maxOccurs="1" name="RequestStatus" type="xs:string" />
+      <xs:element minOccurs="0" maxOccurs="1" name="RequestRejectionCode" type="xs:string" />
+      <xs:element minOccurs="0" maxOccurs="1" name="RequestRejectionDescription" type="xs:string" />
+      <xs:element minOccurs="0" maxOccurs="1" name="OTPStatusDetails" type="ArrayOfOTPStatusDetail" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="ArrayOfOTPStatusDetail">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="OTPStatusDetail" nillable="true" type="OTPStatusDetail" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="OTPStatusDetail">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="1" name="RecipientType" type="xs:string" />
+      <xs:element minOccurs="0" maxOccurs="1" name="RecipientValue" type="xs:string" />
+      <xs:element minOccurs="0" maxOccurs="1" name="Status" type="xs:string" />
+      <xs:element minOccurs="0" maxOccurs="1" name="Description" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="A18CkycResendOTPRequest" nillable="true" type="A18CkycResendOTPRequest" />
+  <xs:complexType name="A18CkycResendOTPRequest">
+    <xs:complexContent mixed="false">
+      <xs:extension base="RequestBaseClass">
+        <xs:sequence>
+          <xs:element minOccurs="0" maxOccurs="1" name="ReferenceGuid" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="RequestBaseClass">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="1" name="ApiToken" type="xs:string" />
+      <xs:element minOccurs="0" maxOccurs="1" name="RequestId" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="OTPStatusDetail" nillable="true" type="OTPStatusDetail" />
+  <xs:element name="RequestBaseClass" nillable="true" type="RequestBaseClass" />
+</xs:schema>

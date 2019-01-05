@@ -1,0 +1,4 @@
+C:\Users\Kashyap.Thakrar\Desktop\AMEX\A18_XML_XSD\A18_XML_XSD\bin\Debug\A18_XML_XSD.dll
+C:\Users\Kashyap.Thakrar\Desktop\AMEX\A18_XML_XSD\A18_XML_XSD\bin\Debug\A18_XML_XSD.pdb
+C:\Users\Kashyap.Thakrar\Desktop\AMEX\A18_XML_XSD\A18_XML_XSD\obj\Debug\A18_XML_XSD.dll
+C:\Users\Kashyap.Thakrar\Desktop\AMEX\A18_XML_XSD\A18_XML_XSD\obj\Debug\A18_XML_XSD.pdb

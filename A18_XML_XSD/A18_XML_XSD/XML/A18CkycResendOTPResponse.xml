@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<A18CkycResendOTPResponse>
+  <RequestId>RequestId1</RequestId>
+  <ReferenceGuid>ReferenceGuid1</ReferenceGuid>
+  <RequestStatus>RequestStatus1</RequestStatus>
+  <RequestRejectionCode>RequestRejectionCode1</RequestRejectionCode>
+  <RequestRejectionDescription>RequestRejectionDescription1</RequestRejectionDescription>
+  <OTPStatusDetails>
+    <OTPStatusDetail xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true" />
+    <OTPStatusDetail>
+      <RecipientType>RecipientType1</RecipientType>
+      <RecipientValue>RecipientValue1</RecipientValue>
+      <Status>Status1</Status>
+      <Description>Description1</Description>
+    </OTPStatusDetail>
+    <OTPStatusDetail xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true" />
+  </OTPStatusDetails>
+</A18CkycResendOTPResponse>

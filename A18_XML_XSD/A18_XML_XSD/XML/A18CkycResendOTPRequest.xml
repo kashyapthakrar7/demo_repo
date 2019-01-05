@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<A18CkycResendOTPRequest>
+  <ApiToken>ApiToken1</ApiToken>
+  <RequestId>RequestId1</RequestId>
+  <ReferenceGuid>ReferenceGuid1</ReferenceGuid>
+</A18CkycResendOTPRequest>
